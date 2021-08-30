@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link href="https://fonts.google.com/specimen/Original+Surfer" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0;
+        padding: 0;
+    }
+
+    body img {
+        width: 100%;
+        position: relative;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 4px;
+        top: 7px;
+
+    }
+
+    .left img {
+        width: 105px;
+        animation-name: beauty;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes beauty {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            left: 85px; 
+            top: 0px;
+        }
+
+        50% {
+            left: 85px;
+            top: 114px;
+        }
+
+        75% {
+            left: 0px;
+            top: 114px;
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .mid {
+        display: inline-block;
+        width: 38%;
+        margin: -880px 477px;
+        border: 2px solid grey;
+        border-radius: 61px;
+        background-color: darkgray;
+        position: absolute;
+
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 14px;
+        top: 21px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+        margin-left: -16px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+        background-color: white;
+    }
+
+    .navbar li a {
+        color: black;
+        text-decoration: none;
+        padding: 6px 8px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: wavy;
+        color: rgb(109, 109, 109);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: white;
+        color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(167, 162, 162);
+    }
+
+    .container {
+        font-style: italic;
+        font-size: 25px;
+        color: black;
+        text-align: center;
+        position: relative;
+        margin-top: -48px;
+        margin-bottom: -48px;
+    }
+
+    .form {
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+    }
+
+    .form input {
+        font-size: 25px;
+    }
+
+    .form select {
+        font-size: 25px;
+    }
+
+    .form textarea {
+        font-size: 25px;
+    }
+
+    .form button {
+        font-size: 25px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .form button:hover {
+        background-color: lightgrey;
+    }
+
+    .makeup img {
+        margin-top: 84px;
+    }
+
+    .quote {
+        position: absolute;
+        font-family: 'Original Surfer', cursive;
+        margin-top: -690px;
+        margin-left: 15px;
+        font-size: 52px;
+        color: aliceblue;
+
+    }
+
+    .quote p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-size: 38px;
+    }
+
+    .quote button {
+        font-size: 28px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        background-color: rgba(221, 216, 216, 0.733);
+        cursor: pointer;
+    }
+
+    .quote button:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .container2 {
+        text-align: center;
+    }
+
+    .container2 h1 {
+        font-family: 'RocknRoll One', sans-serif;
+        color: rgb(165, 120, 35);
+
+    }
+
+    .container2 h2 {
+        font-family: 'RocknRoll One', sans-serif;
+        color: rgb(165, 120, 35);
+
+    }
+
+    .container2 p {
+        font-size: 20px;
+        background-color: rgb(228, 221, 212);
+    }
+
+    .container3 {
+        display: flex;
+        margin: 25px 25px;
+        background-color: lightgray;
+        margin-top: 111px;
+        margin-bottom: 74px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 88px 355px;
+    }
+
+    .container3 li {
+        list-style-type: none;
+
+    }
+
+    .list {
+
+        font-size: 20px;
+
+
+    }
+
+    .link {
+        text-decoration: none;
+        color: rgb(165, 120, 35);
+
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<body>
+    <img src="img/girl.jpg">
+
+    <header class="header">
+        <div class="left">
+            <img src="img/beauty.jpg" alt="">
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Address</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <br><br>
+    <div class="quote">
+        Beauty is power;<br> a smile is its sword....!!<br><br>
+        <p><u>20+ Years of Experience</u><br><br>
+            Allow our team of beauty specialist to prepare for your wedding<br> and enhance your special.</p>
+        <button>LEARN MORE</button>
+        <button>PURCHASE</button>
+    </div>
+
+    <div class="container">
+        <h1>Make an Appointment</h1>
+        <form class="form" action="noaction.php">
+            Name: <input name="name" type="text" /> <br /> <br>
+            Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br /><br>
+            Gender: <select>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br /> <br>
+            <input checked="checked" type="radio" value="Weekly" /> Weekly <input type="radio" value="Monthly" />
+            Monthly<br /><br>
+            <textarea cols="20" rows="3">Suggestion</textarea><br /><Br>
+            <label><input type="checkbox" value="tandc" />Accept terms</label> <br /><br>
+            <button>SUBMIT</button>
+        </form>
+    </div>
+    <div class="makeup">
+        <img src="img/makeup.jpg">
+    </div>
+    <div class="container2">
+        <h1><u>The Best Beauticians</u></h1>
+        <p>Warrant present garrets limited cordial in inquiry to. Supported me sweetness behaviour shameless excellent
+            so arranging.
+
+        </p>
+        <h2>PROFESSIONAL MAKE UP ARTISTS</h2>
+        <p>Happiness she ham but instantly put departure propriety.</p>
+        <h2>AMAZING PRICES</h2>
+        <p>Occasion so bachelor humoured striking by attended doubtful be it.</p>
+        <h2>BEAUTICIAN COURSES AVAILABLE</h2>
+        <p>Eagerness it delighted pronounce repulsive furniture now.</p>
+    </div>
+    <div class="container3">
+
+        <ul>
+            <li class="list">BEAUTY</li>
+            <li><a class="link" href="#">Terms</a></li>
+            <li><a class="link" href="#">Licenses</a></li>
+        </ul>
+
+        <ul>
+            <li class="list">TREATMENTS</li>
+            <li><a class="link" href="#">Semi-Permanent Makeup</a></li>
+            <li><a class="link" href="#">Manicure and Pedicures</a></li>
+            <li><a class="link" href="#">Makeup</a></li>
+            <li><a class="link" href="#">Tanning</a></li>
+            <li><a class="link" href="#">Botox & Filler</a></li>
+        </ul>
+
+        <ul>
+            <li class="list">OUR COMMUNITY</li>
+            <li><a class="link" href="#">Community</a></li>
+            <li><a class="link" href="#">Blog</a></li>
+            <li><a class="link" href="#">Forums</a></li>
+            <li><a class="link" href="#">Meetups</a></li>
+        </ul>
+
+        <ul>
+            <li class="list">Help</li>
+            <li><a class="link" href="#">Help Center</a></li>
+            <li><a class="link" href="#">Authors</a></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
